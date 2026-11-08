@@ -52,6 +52,57 @@ nav{justify-content:center}
 .hero{padding:75px 18px}
 section{padding:55px 6%}
 }
+
+/* NOUVELLE IDENTITE VISUELLE */
+header{
+background:#071b3b;
+padding:17px 5%;
+border-bottom:4px solid #f2bd42;
+box-shadow:0 4px 18px #071b3b30;
+}
+.logo{color:white;font-size:23px;letter-spacing:1px}
+.logo-main{display:flex;align-items:center;gap:9px}
+.logo-symbol{
+display:inline-block;background:#f2bd42;color:#071b3b;
+padding:8px 11px;border-radius:9px;font-size:22px;
+font-weight:900;box-shadow:0 3px 9px #0003
+}
+.logo small{font-size:9px;letter-spacing:2px;color:#f2bd42}
+nav a{font-weight:bold;transition:.2s}
+nav a:hover{color:#f2bd42}
+.hero{
+position:relative;overflow:hidden;
+background:radial-gradient(circle at 85% 20%,#245b91 0%,transparent 32%),
+linear-gradient(120deg,#061633 0%,#103c70 65%,#071b3b 100%);
+padding:115px 20px;
+border-bottom:7px solid #f2bd42;
+}
+.hero-label{
+display:inline-block;background:#f2bd42;color:#071b3b;
+padding:9px 17px;border-radius:30px;font-size:12px;
+font-weight:bold;letter-spacing:1px;margin-bottom:24px
+}
+.hero h1{font-weight:900;letter-spacing:-1px;text-shadow:0 3px 12px #0004}
+.hero h1 span{color:#ffd34f}
+.hero h2{font-size:clamp(21px,3vw,29px)}
+.hero p{max-width:720px;margin:0 auto 28px}
+.btn{border-radius:30px;transition:transform .2s,opacity .2s}
+.btn:hover{transform:translateY(-3px);opacity:.92}
+section h2{color:#102c55;font-weight:800}
+#services{background:#f4f7fc}
+.card{border:1px solid #e0e8f3;border-bottom:4px solid #f2bd42;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-5px);box-shadow:0 9px 24px #071b3b18}
+.card h3{color:#123b75}
+#social{background:#e8effb!important}
+footer{background:#071b3b;border-top:4px solid #f2bd42}
+.whatsapp-float{font-size:14px}
+@media(max-width:600px){
+.hero{padding:75px 18px}
+.logo{font-size:19px}
+.logo-symbol{font-size:18px}
+.hero-label{font-size:10px}
+}
+
 </style>
 </head>
 
@@ -59,8 +110,8 @@ section{padding:55px 6%}
 
 <header>
 <div class="logo">
-UTETEMEKO
-<small>ELECTRICAL</small>
+<div class="logo-main"><span class="logo-symbol">UTE⚡</span> UTETEMEKO</div>
+<small>ELECTRICAL · ÉNERGIE · INNOVATION</small>
 </div>
 
 <nav>
@@ -76,6 +127,7 @@ UTETEMEKO
 <main>
 
 <div class="hero" id="home">
+<div class="hero-label">⚡ UTETEMEKO ELECTRICAL · LUBUMBASHI</div>
 <h1>UTETEMEKO <span>ELECTRICAL</span></h1>
 
 <h2 data-fr="L'énergie au service de vos projets."
